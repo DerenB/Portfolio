@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bozer Code</title>
-    <style>
-        .menuBar {
-            display: flex;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="NavBar/navBarStyles.css">
 
 </head>
 <body>
     <!-- ********** NAVIGATION BAR ********** -->
     <nav>
-        <ul class="menuBar">
-            <li><a href="#">The Bozer Code</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li>
+        <ul class="menu">
+            <li class="logo"><a href="#">Bozer Code</a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item has-submenu">
                 <a tabindex="0">Projects</a>
-                <ul class="subMenu">
-                    <li class=""><a href="#">Item 1</a></li>
-                    <li class=""><a href="#">Item 2</a></li>
-                    <li class=""><a href="#">Item 3</a></li>
-                    <li class=""><a href="#">All Projects</a></li>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Item 1</a></li>
+                    <li class="subitem"><a href="#">Item 2</a></li>
+                    <li class="subitem"><a href="#">Item 3</a></li>
+                    <li class="subitem"><a href="#">All Projects</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li class="item"><a href="#">Contact</a>
+            </li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
     <!-- ********** NAVIGATION BAR ********** -->
 
-    <script>
-     
-    </script>
+
+<script src="NavBar/navBarScript.js"></script>
+<script>
+   
+
+</script>
 </body>
 </html>
+<!-- ********** ********** -->
